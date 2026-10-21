@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>University of Layyah Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="side" id="side">
+    <div class="side-top">
+      <a class="logo" href="#top">University of Layyah<br><span>Campus Journal</span></a>
+      <button class="burger" id="burger" aria-expanded="false">Menu</button>
+    </div>
+    <div class="side-body" id="sideBody">
+      <input type="search" id="search" placeholder="Search posts" aria-label="Search posts">
+      <nav aria-label="Categories" id="cats">
+        <button class="cat active" data-cat="all">All posts <b id="count">6</b></button>
+        <button class="cat" data-cat="admissions">Admissions</button>
+        <button class="cat" data-cat="events">Events</button>
+        <button class="cat" data-cat="sports">Sports</button>
+        <button class="cat" data-cat="academics">Academics</button>
+      </nav>
+      <div class="side-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme" id="theme" type="button">Switch to dark mode</button>
+    </div>
+  </aside>
+
+  <main id="top">
+    <header class="masthead">
+      <p class="kicker">From the campus beside the Indus</p>
+      <h1>What is happening at the University of Layyah</h1>
+    </header>
+
+    <ol class="feed" id="feed">
+      <li class="post lead" data-cat="admissions">
+        <time>12 Oct 2026</time>
+        <div>
+          <h2>Fall admissions are open</h2>
+          <p>Applications are open for BS programs. Submit your form and documents before the deadline.</p>
+          <p class="more" hidden>Collect the form from the admissions office or download it from the university website. Bring attested copies of your certificates, four photographs and your CNIC or B-Form. Merit lists will be displayed on the notice board.</p>
+          <button class="toggle" type="button">Read more</button>
+        </div>
+      </li>
+      <li class="post" data-cat="events">
+        <time>5 Oct 2026</time>
+        <div>
+          <h2>Annual Science Fair</h2>
+          <p>Students from every department will present projects in robotics, agriculture and software.</p>
+          <p class="more" hidden>The fair runs for two days in the main hall. Visitors are welcome, and the best projects will receive prizes from the vice chancellor.</p>
+          <button class="toggle" type="button">Read more</button>
+        </div>
+      </li>
+      <li class="post" data-cat="sports">
+        <time>28 Sep 2026</time>
+        <div>
+          <h2>Cricket team wins inter-university match</h2>
+          <p>The university team won a close final and moves on to the regional round next month.</p>
+          <p class="more" hidden>The team chased down the target with two overs to spare. Practice sessions continue every evening at the university ground.</p>
+          <button class="toggle" type="button">Read more</button>
+        </div>
+      </li>
+      <li class="post" data-cat="academics">
+        <time>20 Sep 2026</time>
+        <div>
+          <h2>New computer lab inaugurated</h2>
+          <p>The Computer Science department now has a lab with 40 workstations for programming and web classes.</p>
+          <p class="more" hidden>The lab is open on weekdays and has high-speed internet. Students can book extra hours for project work through their department.</p>
+          <button class="toggle" type="button">Read more</button>
+        </div>
+      </li>
+      <li class="post" data-cat="events">
+        <time>10 Sep 2026</time>
+        <div>
+          <h2>Tree plantation drive on campus</h2>
+          <p>Faculty and students planted over 200 saplings, including date palms, across the campus.</p>
+          <p class="more" hidden>Each department adopted a section of the campus and will look after its trees through the year.</p>
+          <button class="toggle" type="button">Read more</button>
+        </div>
+      </li>
+      <li class="post" data-cat="academics">
+        <time>1 Sep 2026</time>
+        <div>
+          <h2>Midterm exam schedule released</h2>
+          <p>The date sheet for all departments is available on the notice boards.</p>
+          <p class="more" hidden>Check your department notice board for room numbers and timings. Students must bring their university card to every paper.</p>
+          <button class="toggle" type="button">Read more</button>
+        </div>
+      </li>
+    </ol>
+    <p class="empty" id="empty" hidden>No posts match your search. Try a different word or category.</p>
+
+    <section class="block" id="about">
+      <h2>About this blog</h2>
+      <p>A student project for the Web Technologies course, sharing news from the University of Layyah in Layyah, Punjab, Pakistan.</p>
+    </section>
+
+    <section class="block" id="contact">
+      <h2>Contact</h2>
+      <form id="form" novalidate>
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <label for="msg">Message</label>
+        <textarea id="msg" rows="4"></textarea>
+        <button class="send" type="submit">Send message</button>
+        <p id="formMsg" role="status"></p>
+      </form>
+    </section>
+
+    <footer>&copy; 2026 University of Layyah Campus Journal</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
